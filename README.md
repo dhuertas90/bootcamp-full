@@ -1,6 +1,6 @@
 # Proyecto FULL
 
-![Página principal donde se encuentra el listado de cursos y un formulario](frontend-react\public\index.PNG)
+![Página principal donde se encuentra el listado de cursos y un formulario](frontend-react/public/index.PNG)
 
 ## Explicación de ejecución
 
