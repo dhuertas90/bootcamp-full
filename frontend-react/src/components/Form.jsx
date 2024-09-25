@@ -58,7 +58,7 @@ function Form() {
                     placeholder="Título del curso" // Texto de ayuda mostrado en el campo de entrada
                     required // Hace que el campo sea obligatorio
                 />
-                <button type="submit">Agregar Curso</button> {/* Botón para enviar el formulario */}
+                <button type="submit">Agregar</button> {/* Botón para enviar el formulario */}
             </form>
         </div>
     );

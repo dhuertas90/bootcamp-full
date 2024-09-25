@@ -1,5 +1,7 @@
 # Proyecto FULL
 
+![Página principal donde se encuentra el listado de cursos y un formulario](frontend-react\public\index.PNG)
+
 ## Explicación de ejecución
 
 Como estamos trabajando con un backend hecho en Node.js/Express y un frontend con React, es habitual que tengas que correr ambas partes del proyecto por separado.
