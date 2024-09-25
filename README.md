@@ -20,11 +20,14 @@ cd ruta/del/backend
 ```
 En mi caso es: cd backend-express-sqlite/src
 1.3 Inicia el servidor con Node.js.
+```bash
 node server.js
+```
 
 O si tienes un script configurado en el archivo package.json del backend, como "start": "node server.js", puedes ejecutar:
-
+```bash
 npm start
+```
 
 
 2. Terminal para el Frontend (React)
@@ -40,7 +43,9 @@ cd ruta/del/frontend
 En mi caso es /frontend-react/
 
 2.3 Inicia el servidor de React.
+```bash
 npm run dev
+```
 
 
 
