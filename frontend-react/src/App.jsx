@@ -8,8 +8,6 @@ function App() {
     return (
         <div className="App"> {/* Aplicar estilos CSS al contenedor principal */}
             <Form /> {/* Renderiza el componente Form */}
-            {/* Puedes descomentar la siguiente línea para mostrar la lista de cursos */}
-            {/* <CoursesList /> */}
         </div>
     );
 }

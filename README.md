@@ -1,4 +1,4 @@
-# React + Vite
+# Proyecto FULL
 
 ## Explicación de ejecución
 
@@ -38,10 +38,10 @@ npm run dev
 
 ## Rutas
 
-- Probar la ruta GET: Visita http://localhost:3001/api/cursos para obtener todos los cursos.
-- Probar la ruta POST:
+- Probar la ruta GET: Visita http://localhost:3001/ para obtener el listado de cursos.
+- Probar la ruta POST: sobre la misma url raíz.
     - Completar el Formulario.
-    - Usa Postman o un cliente similar para hacer una solicitud POST a http://localhost:3001/api/cursos con un cuerpo JSON como este:
+    - Usa Postman o un cliente similar para hacer una solicitud POST a http://localhost:3001/ con un cuerpo JSON como este:
         {
         "titulo": "Nuevo curso"
         }
