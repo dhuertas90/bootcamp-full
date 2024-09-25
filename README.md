@@ -14,7 +14,11 @@ En una terminal, te vas a dirigir a la carpeta donde está el backend y ejecutar
 
 1.1 Abre una terminal.
 1.2 Navega hasta la carpeta del backend (donde está el archivo server.js o similar).
+
+```bash
 cd ruta/del/backend
+
+En mi caso es: cd backend-express-sqlite/src
 1.3 Inicia el servidor con Node.js.
 node server.js
 
@@ -29,7 +33,11 @@ En nuestro caso, como utilizamos Vite, el comando para iniciar el servidor de de
 
 2.1 Abre una nueva terminal.
 2.2 Navega hasta la carpeta donde está el frontend (donde está la aplicación React, generalmente la carpeta frontend o similar).
+
+```bash
 cd ruta/del/frontend
+
+En mi caso es /frontend-react/
 
 2.3 Inicia el servidor de React.
 npm run dev
@@ -38,8 +46,9 @@ npm run dev
 
 ## Rutas
 
-- Probar la ruta GET: Visita http://localhost:3001/ para obtener el listado de cursos.
-- Probar la ruta POST: sobre la misma url raíz.
+- Probar usando la pagina y el formulario.
+- Probar una solicitud de la ruta GET: Visita http://localhost:3001/ para obtener el listado de cursos.
+- Probar una solicitud de la ruta POST: sobre la misma url raíz.
     - Completar el Formulario.
     - Usa Postman o un cliente similar para hacer una solicitud POST a http://localhost:3001/ con un cuerpo JSON como este:
         {

@@ -45,3 +45,7 @@
   color: aqua;
   border: 2px solid red;
 }
+
+li {
+  list-style-type: none;
+}

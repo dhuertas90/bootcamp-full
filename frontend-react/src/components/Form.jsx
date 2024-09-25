@@ -39,7 +39,7 @@ function Form() {
 
     return (
         <div className="content-curso">
-            <h1>Datos de los cursos</h1> {/* Título de la sección */}
+            <h1>Cursos en CILSA 2025</h1>
             
             <ul>
                 {/* Mapea sobre el array de cursos y crea un elemento de lista para cada curso */}
@@ -48,7 +48,7 @@ function Form() {
                 ))}
             </ul>
 
-            <h2>Agregar un nuevo curso</h2> {/* Título para el formulario */}
+            <h2>Agregar un nuevo curso</h2>
             
             <form onSubmit={handleSubmit}> {/* Maneja el envío del formulario */}
                 <input
