@@ -17,7 +17,7 @@ En una terminal, te vas a dirigir a la carpeta donde está el backend y ejecutar
 
 ```bash
 cd ruta/del/backend
-
+```
 En mi caso es: cd backend-express-sqlite/src
 1.3 Inicia el servidor con Node.js.
 node server.js
@@ -36,7 +36,7 @@ En nuestro caso, como utilizamos Vite, el comando para iniciar el servidor de de
 
 ```bash
 cd ruta/del/frontend
-
+```
 En mi caso es /frontend-react/
 
 2.3 Inicia el servidor de React.
