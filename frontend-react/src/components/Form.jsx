@@ -37,6 +37,20 @@ function Form() {
             .catch(error => console.error('Error adding course:', error)); // Maneja cualquier error durante la solicitud
     };
 
+    // Maneja la eliminación de un curso
+    const handleDelete = (id) => {
+        fetch(`http://localhost:3001/${id}`, {
+            method: 'DELETE', // Método HTTP para eliminar un curso
+        })
+            .then(response => response.json()) // Convierte la respuesta en formato JSON
+            .then(() => {
+                // Filtra la lista de cursos para remover el curso eliminado
+                const updatedCursos = cursos.filter(curso => curso.id_curso !== id);
+                setCursos(updatedCursos); // Actualiza el estado con la lista de cursos filtrada
+            })
+            .catch(error => console.error('Error deleting course:', error)); // Maneja cualquier error durante la solicitud
+    };
+
     return (
         <div className="content-curso">
             <h1>Cursos en CILSA 2025</h1>
@@ -44,7 +58,10 @@ function Form() {
             <ul>
                 {/* Mapea sobre el array de cursos y crea un elemento de lista para cada curso */}
                 {cursos.map((curso) => (
-                    <li key={curso.id_curso}>{curso.titulo}</li> // Usa el id del curso como clave única
+                    <li key={curso.id_curso}>
+                        {curso.titulo} {/* Muestra el título del curso */}
+                        <button onClick={() => handleDelete(curso.id_curso)}>Eliminar</button> {/* Botón para eliminar el curso */}
+                    </li>
                 ))}
             </ul>
 

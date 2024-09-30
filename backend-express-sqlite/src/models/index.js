@@ -43,4 +43,19 @@ const run = (req, res) => {
     });
 };
 
-module.exports = { all, run };
+// Este podría ser el codigo
+const del = (req, res) => {
+    const { id } = req.params;
+    const sql = 'DELETE FROM cursos WHERE id_curso = ?';
+    const params = [id];
+
+    db.run(sql, params, function (err) {
+        if (err) {
+            res.status(400).json({ error: err.message });
+            return;
+        }
+        res.json({ message: `Curso con ID ${id} eliminado` });
+    });
+};
+
+module.exports = { all, run, del };
