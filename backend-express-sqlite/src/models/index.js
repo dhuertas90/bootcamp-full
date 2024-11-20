@@ -43,10 +43,10 @@ const run = (req, res) => {
     });
 };
 
-// Este podría ser el codigo
+// Este podría ser el codigo para eliminar
 const del = (req, res) => {
     const { id } = req.params;
-    const sql = 'DELETE FROM cursos WHERE id_curso = ?';
+    const sql = 'DELETE FROM curso WHERE id_curso = ?';
     const params = [id];
 
     db.run(sql, params, function (err) {

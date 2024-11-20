@@ -37,7 +37,6 @@ function Form() {
             .catch(error => console.error('Error adding course:', error)); // Maneja cualquier error durante la solicitud
     };
 
-    // Maneja la eliminación de un curso
     const handleDelete = (id) => {
         fetch(`http://localhost:3001/${id}`, {
             method: 'DELETE', // Método HTTP para eliminar un curso
@@ -50,6 +49,7 @@ function Form() {
             })
             .catch(error => console.error('Error deleting course:', error)); // Maneja cualquier error durante la solicitud
     };
+    
 
     return (
         <div className="content-curso">
