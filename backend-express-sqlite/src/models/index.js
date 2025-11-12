@@ -48,6 +48,7 @@ const del = (req, res) => {
     const { id } = req.params;
     const sql = 'DELETE FROM curso WHERE id_curso = ?';
     const params = [id];
+    console.log('Intentando eliminar id:', id);
 
     db.run(sql, params, function (err) {
         if (err) {
